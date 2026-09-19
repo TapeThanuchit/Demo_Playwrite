@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "NodeNext",                  // 👈 เปลี่ยนเป็น NodeNext
+    "moduleResolution": "NodeNext",        // 👈 เปลี่ยนเป็น NodeNext
+    "baseUrl": ".",
+    "paths": {
+      "@pages/*": ["src/pages/*"],
+      "@methods/*": ["src/keyword/*"],
+      "@testdata/*": ["src/testdata/*"],
+      "@utils/*": ["src/utils/*"]
+    },
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "strict": true
+  },
+  "include": ["src/**/*", "tests/**/*", "playwright.config.ts"]  // 👈 อย่าลืมรวม playwright.config.ts เข้าไปด้วย
+}
